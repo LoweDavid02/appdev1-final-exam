@@ -1,3 +1,9 @@
+# appdev1-final-exam
+
+This repository is the AppDev1 final exam project — a React + Vite TODO app template.
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
