@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://LoweDavid02.github.io/appdev1-final-exam",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LoweDavid02/appdev1-final-exam.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +15,8 @@
     "preview": "vite preview",
 
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "postbuild": "node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "deploy": "gh-pages -d dist -r git@github.com:LoweDavid02/appdev1-final-exam.git"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.0",
